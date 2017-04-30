@@ -1,0 +1,25 @@
+--cpu Cortex-M4.fp
+"f4_oled\startup_stm32f407xx.o"
+"f4_oled\stm32f4xx_hal_msp.o"
+"f4_oled\stm32f4xx_it.o"
+"f4_oled\main.o"
+"f4_oled\iic_oled.o"
+"f4_oled\system_stm32f4xx.o"
+"f4_oled\stm32f4xx_hal_dma.o"
+"f4_oled\stm32f4xx_hal_gpio.o"
+"f4_oled\stm32f4xx_hal_flash.o"
+"f4_oled\stm32f4xx_hal_pwr.o"
+"f4_oled\stm32f4xx_hal.o"
+"f4_oled\stm32f4xx_hal_flash_ex.o"
+"f4_oled\stm32f4xx_hal_dma_ex.o"
+"f4_oled\stm32f4xx_hal_rcc.o"
+"f4_oled\stm32f4xx_hal_tim_ex.o"
+"f4_oled\stm32f4xx_hal_rcc_ex.o"
+"f4_oled\stm32f4xx_hal_cortex.o"
+"f4_oled\stm32f4xx_hal_flash_ramfunc.o"
+"f4_oled\stm32f4xx_hal_tim.o"
+"f4_oled\stm32f4xx_hal_pwr_ex.o"
+--library_type=microlib --strict --scatter "f4_oled\f4_oled.sct"
+--diag_suppress=L6329 --summary_stderr --info summarysizes --map --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "f4_oled.map" -o f4_oled\f4_oled.axf
